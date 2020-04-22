@@ -41,4 +41,12 @@ public class StudentService {
     studentRepository.deleteById(studentId);
   }
 
+  public List<Student> getStudentsInSameClass(String studentClass) {
+    List<Student> studentList = studentRepository.findAll();
+    List<Student> filteredList = studentList.stream()
+        .filter(s -> s.getStudentClass().equalsIgnoreCase(studentClass))
+        .collect(Collectors.toList());
+    return filteredList;
+  }
+
 }

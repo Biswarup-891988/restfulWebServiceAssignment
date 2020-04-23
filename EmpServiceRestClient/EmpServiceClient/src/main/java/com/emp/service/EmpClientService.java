@@ -24,7 +24,7 @@ public class EmpClientService {
         .onStatus(HttpStatus::is4xxClientError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code: " + c.statusCode())))
-        .onStatus(HttpStatus::is4xxClientError,
+        .onStatus(HttpStatus::is5xxServerError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code" + c.statusCode())))
         .bodyToMono(new ParameterizedTypeReference<List<Employee>>() {}).block();
@@ -37,7 +37,7 @@ public class EmpClientService {
         .onStatus(HttpStatus::is4xxClientError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code: " + c.statusCode())))
-        .onStatus(HttpStatus::is4xxClientError,
+        .onStatus(HttpStatus::is5xxServerError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code" + c.statusCode())))
         .bodyToMono(new ParameterizedTypeReference<List<Employee>>() {}).block();
@@ -50,7 +50,7 @@ public class EmpClientService {
         .onStatus(HttpStatus::is4xxClientError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code: " + c.statusCode())))
-        .onStatus(HttpStatus::is4xxClientError,
+        .onStatus(HttpStatus::is5xxServerError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code" + c.statusCode())))
         .bodyToMono(new ParameterizedTypeReference<List<Employee>>() {}).block();
@@ -62,7 +62,7 @@ public class EmpClientService {
             .onStatus(HttpStatus::is4xxClientError,
                 c -> Mono.error(new EmpServiceException(
                     "Recived error with response code: " + c.statusCode())))
-            .onStatus(HttpStatus::is4xxClientError,
+            .onStatus(HttpStatus::is5xxServerError,
                 c -> Mono.error(new EmpServiceException(
                     "Recived error with response code" + c.statusCode())))
             .bodyToMono(Void.class).block();
@@ -75,7 +75,7 @@ public class EmpClientService {
             .onStatus(HttpStatus::is4xxClientError,
                 c -> Mono.error(new EmpServiceException(
                     "Recived error with response code: " + c.statusCode())))
-            .onStatus(HttpStatus::is4xxClientError,
+            .onStatus(HttpStatus::is5xxServerError,
                 c -> Mono.error(new EmpServiceException(
                     "Recived error with response code" + c.statusCode())))
             .bodyToMono(Employee.class).block();
@@ -89,7 +89,7 @@ public class EmpClientService {
         .onStatus(HttpStatus::is4xxClientError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code: " + c.statusCode())))
-        .onStatus(HttpStatus::is4xxClientError,
+        .onStatus(HttpStatus::is5xxServerError,
             c -> Mono.error(new EmpServiceException(
                 "Recived error with response code" + c.statusCode())))
         .bodyToMono(Void.class).block();

@@ -1,0 +1,639 @@
+{
+	"info": {
+		"_postman_id": "c9244469-ed70-48b0-90fd-6967efecf61e",
+		"name": "restFullWebServiceAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Topic6",
+			"item": [
+				{
+					"name": "Assignment1",
+					"item": [
+						{
+							"name": "localhost:8080/api/movie",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/api/movie",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									],
+									"query": [
+										{
+											"key": "acce",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8080/api/movie/M001",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/movie/M001",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"M001"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Assignment2",
+					"item": [
+						{
+							"name": "localhost:8081/api/addStudent",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"studentId\": \"S001\",\r\n        \"studentName\": \"Mark Taylor\",\r\n        \"studentClass\": \"C2\",\r\n        \"studentTotalMarks\": 82.0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/addStudent",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"addStudent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/studentHighMarks/60",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/studentHighMarks/60",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"studentHighMarks",
+										"60"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/student/S001",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/student/S001",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"student",
+										"S001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/allStudent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/allStudent",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"allStudent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/updateStudent",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"studentId\": \"S001\",\r\n        \"studentName\": \"Mark Taylor\",\r\n        \"studentClass\": \"C4\",\r\n        \"studentTotalMarks\": 67.0\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/updateStudent",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"updateStudent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/deleteStudent/S006",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/deleteStudent/S006",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"deleteStudent",
+										"S006"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Assignment3",
+					"item": [
+						{
+							"name": "localhost:8081/api/student?studentId=S001",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/student?studentId=S001",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"student"
+									],
+									"query": [
+										{
+											"key": "studentId",
+											"value": "S001"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/studentMatrix/studentId=S001",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/studentMatrix/studentId=S001",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"studentMatrix",
+										"studentId=S001"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/studentSameClass/C2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/studentSameClass/C2",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"studentSameClass",
+										"C2"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Assignment4",
+					"item": [
+						{
+							"name": "localhost:8080/api/validate?creditCardNumber=234268",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/validate?creditCardNumber=234268",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"validate"
+									],
+									"query": [
+										{
+											"key": "creditCardNumber",
+											"value": "234268"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Topic7",
+			"item": [
+				{
+					"name": "Assignement1",
+					"item": [
+						{
+							"name": "localhost:8081/api/allEmp",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8081/api/allEmp",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"allEmp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/addEmp",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "    <item>\r\n        <empId>EM003</empId>\r\n        <empFirstName>Peter</empFirstName>\r\n        <empLastName>Smith</empLastName>\r\n        <empLocation>Manchester</empLocation>\r\n        <empBand>B1</empBand>\r\n    </item>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/addEmp",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"addEmp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/emp/band/B3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/emp/band/B3",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"emp",
+										"band",
+										"B3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/emp/loc/London",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8081/api/emp/loc/Manchester",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"emp",
+										"loc",
+										"Manchester"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/updateEmp",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    <item>\r\n        <empId>EM001</empId>\r\n        <empFirstName>Peter</empFirstName>\r\n        <empLastName>Parker</empLastName>\r\n        <empLocation>Manchester</empLocation>\r\n        <empBand>B3</empBand>\r\n    </item>",
+									"options": {
+										"raw": {
+											"language": "xml"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8081/api/updateEmp",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"updateEmp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8081/api/deleteEmp/EM002",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8081/api/deleteEmp/EM002",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"api",
+										"deleteEmp",
+										"EM002"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Assignment2",
+					"item": [
+						{
+							"name": "localhost:8082/client/allEmp",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/client/allEmp",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"client",
+										"allEmp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8082/client/deleteEmp/EM003",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/client/deleteEmp/EM003",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"client",
+										"deleteEmp",
+										"EM003"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8082/client/emp/band/B1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/client/emp/band/B1",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"client",
+										"emp",
+										"band",
+										"B1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8082/client/emp/loc/Manchester",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8082/client/emp/loc/Manchester",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"client",
+										"emp",
+										"loc",
+										"Manchester"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8082/client/updateEmp",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"empId\": \"EM001\",\r\n        \"empFirstName\": \"Sam\",\r\n        \"empLastName\": \"Task\",\r\n        \"empLocation\": \"London\",\r\n        \"empBand\": \"B1\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8082/client/updateEmp",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"client",
+										"updateEmp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8082/client/addEmp",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"empId\": \"EM002\",\r\n        \"empFirstName\": \"Milenko\",\r\n        \"empLastName\": \"Milanovic\",\r\n        \"empLocation\": \"Manchester\",\r\n        \"empBand\": \"B3\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8082/client/addEmp",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"client",
+										"addEmp"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
